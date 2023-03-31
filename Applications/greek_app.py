@@ -48,7 +48,7 @@ def skipComputation():
   print("ready model")
   tokenizer = AutoTokenizer.from_pretrained("chaido13/greek-m2m100-4ep-384")
   print("ready tokenizer")
-  reader = FARMReader(model_name_or_path="Danastos/squad_bert_el", top_k = 1, max_seq_len = 384, doc_stride = 128, context_window_size = 256, confidence_threshold = 0.3, use_auth_token = "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")    
+  reader = FARMReader(model_name_or_path="Danastos/squad_bert_el", top_k = 1, max_seq_len = 384, doc_stride = 128, context_window_size = 256, confidence_threshold = 0.3, use_auth_token = "")    
   print("ready reader")
 
   nltk.download('punkt')
