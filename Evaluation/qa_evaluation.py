@@ -71,7 +71,7 @@ document_store.add_eval_data(
 reader = FARMReader(model_name_or_path="ahotrod/albert_xxlargev1_squad2_512", top_k = 1, max_seq_len = 384, 
                     doc_stride = 128, context_window_size = 256, return_no_answer=True)    
 # reader = FARMReader(model_name_or_path="Danastos/squad_bert_el", top_k = 1, max_seq_len = 384, doc_stride = 128, 
-#                     context_window_size = 256, return_no_answer=True, use_auth_token = "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")    
+#                     context_window_size = 256, return_no_answer=True, use_auth_token = "")    
 
 pipe = Pipeline()
 pipe.add_node(component=reader, name='Reader', inputs=['Query'])
